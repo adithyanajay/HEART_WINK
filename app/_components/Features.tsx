@@ -13,7 +13,7 @@ function Features() {
         </div>
         <div className="cards w-full flex flex-col items-end h-full space-y-4 gap-10">
     <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="cosmic" />
-    <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="comsmic" />
+    <CardFeatures title="SECRET CRUSH DETECTOR" sub_text="adskjf" route="crush" />
     <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="comsmic" />
 </div>
 
