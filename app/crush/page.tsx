@@ -23,7 +23,7 @@ function Crush() {
         if (link) {
             setLinkId(link);
         }
-    }, []); // Run effect only once on mount
+    }, []); 
 
     const handleGenerateLink = async () => {
         try {
@@ -32,11 +32,11 @@ function Crush() {
             }
             console.log("running");
             const response = await fetch("/api/crush", {
-                method: "POST",  // Specify the method as POST
+                method: "POST",
                 headers: {
-                    "Content-Type": "application/json",  // Indicate the content type
+                    "Content-Type": "application/json",  
                 },
-                body: JSON.stringify({ name }),  // Include the name in the request body
+                body: JSON.stringify({ name }),  
             });
 
             const data = await response.json();
@@ -46,9 +46,9 @@ function Crush() {
                 const generatedLink = `${window.location.origin}/submit/${data.id}`;
                 setLinkId(generatedLink);
                 localStorage.setItem("crushTrackerLink", data.id);
-                localStorage.setItem("link", generatedLink); // Store generatedLink instead of linkId
+                localStorage.setItem("link", generatedLink); 
 
-                // Update usedUser state to true
+               
                 setUsedUser(true);
             } else {
                 console.error("Failed to generate link");
