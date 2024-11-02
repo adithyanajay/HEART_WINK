@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# [Heart Wink] 🎯
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Basic Details
+### Team Name: [Miko]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Team Members
+- Member 1: [Eeva] - [COCHIN UNIVERSITY COLLEGE OF ENGINEERING KUTTANAD]
+- Member 2: [Ann Tressa Soney] - [COCHIN UNIVERSITY COLLEGE OF ENGINEERING KUTTANAD]
+- Member 3: [Adithya Ajay] - [COCHIN UNIVERSITY COLLEGE OF ENGINEERING KUTTANAD]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Project Description
+The Love Tracking App is a playful and engaging web application designed for users to explore their love compatibility in a fun and lighthearted manner. Targeting individuals looking for a unique way to interact with their partners or friends, this app provides a platform for sharing personal information and receiving playful compatibility insights.
 
-## Learn More
+## Cosmic Chemistry 
+You can find the compactibilty of your relationship
 
-To learn more about Next.js, take a look at the following resources:
+## SECRET CRUSH
+You can find your friend's crush and prank them
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### The Problem (that doesn't exist)
+You can find your friend's crush and prank them
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### The Solution (that nobody asked for)
+Made a web application, the user can send a link and the friend will receive a form to fill data and the user will receive the data 
 
-## Deploy on Vercel
+## Technical Details
+### Technologies/Components Used
+For Software:
+- [Javascript]
+- [Next js]
+- [Mongoose]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+### Implementation
+For Software:
+# Installation
+[npm install]
+
+# Run
+[npm run dev]
+
+### Project Documentation
+For Software:
+
+# Screenshots (Add at least 3)
+
+![Screenshot 2024-11-02 211434](https://github.com/user-attachments/assets/5db95c2b-9a96-46f7-a6b8-6542a2fca294)
+
+
+![Screenshot 2024-11-02 211736](https://github.com/user-attachments/assets/2aeb34cd-af58-42c8-ba79-f9e58349b5b1)
+
+![Screenshot 2024-11-02 211708](https://github.com/user-attachments/assets/4956d6e3-3d00-4a57-96d8-3a7bc35175c5)
+
+
+### Project Demo
+# Video
+[link](https://www.youtube.com/watch?v=SgsVHI1JUUw)
+*Explain what the video demonstrates*
+
+# Additional Demos
+[Add any extra demo materials/links]
+
+## Team Contributions
+- [Eeva]: [Design and front-end development]
+- [Ann Treesa Soney]: [Design and front-end development]
+- [Adithya Ajay]: [Frontend development and back-end development]
+
+---
+Made with ❤️ at TinkerHub Useless Projects 
+
+
+
