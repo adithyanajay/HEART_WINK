@@ -1,6 +1,6 @@
 import Features from "./_components/Features";
 import Hero from "./_components/Hero";
-
+import Footer from "./_components/Footer";
 
 
 export default function Home() {
@@ -10,6 +10,8 @@ export default function Home() {
          <Hero /> 
           <Features />
       </div>
+
+      <Footer />
      
       
     </div>

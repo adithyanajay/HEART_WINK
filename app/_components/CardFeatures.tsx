@@ -12,7 +12,7 @@ interface CardFeaturesProps {
 function CardFeatures({ title, sub_text, route }: CardFeaturesProps) {
   return (
     <Link href={route}>
-      <div className="card min-w-9/12 max-w-52:  h-32 relative bg-red_main shadow-sm shadow-gray-700/30 hover:scale-110 transition-all mx-auto">
+      <div className="card max-w-72 md:max-w-80  h-32 relative bg-red_main shadow-sm shadow-gray-700/30 hover:scale-110 transition-all mx-auto">
         <div className="card-features-icon w-2/4 absolute top-0 left-0 z-0">
           <Image src={double_heart_middle} alt="logo" className="w-full" />
         </div>
