@@ -3,9 +3,9 @@ import connect from "@/app/libs/db";
 import { NextResponse } from "next/server";
 
 
-export const GET = async (request: Request, context: { params: { crushId: string } }) => {
+export const GET = async (request: Request, context: { params: any}) => {
   try {
-    const { crushId } = context.params;
+    const crushId  = context.params.crushId;
 
     if (!crushId) {
       return NextResponse.json({ message: "Invalid or missing crushId" }, { status: 400 });
