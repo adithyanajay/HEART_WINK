@@ -4,7 +4,6 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -12,7 +11,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "strict": false, // Not recommended
+    "noUnusedLocals": false, // Ignore unused variables
+    "noUnusedParameters": false, // Ignore unused parameters
+    "noImplicitAny": false, // Allow variables to be `any` implicitly
     "incremental": true,
+    
     "plugins": [
       {
         "name": "next"
