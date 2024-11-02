@@ -65,7 +65,7 @@ function Crush() {
         <div className="flex justify-center items-center h-full">
             {
                 !usedUser ? (
-                    <form className="text-center shadow shadow-gray-700/30 w-10/12 md:w-full max-w-2xl m-auto min-h-40 bg-red_main p-10 rounded-md">
+                    <form className="mt-10 text-center shadow shadow-gray-700/30 w-10/12 md:w-full max-w-2xl m-auto min-h-40 bg-red_main p-10 rounded-md">
                         <h1 className="text-3xl top-20 text-white m-auto mb-10">
                             SECRET CRUSH DETECTOR
                         </h1>
