@@ -12,9 +12,9 @@ function Features() {
             <Image src={heart_middle} alt="logo" className="w-full" />
         </div>
         <div className="cards w-full flex flex-col items-end h-full space-y-4 gap-10">
-    <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="Enter names and birthdays to check compatibility." />
-    <CardFeatures title="SECRET CRUSH DETECTOR" sub_text="adskjf" route="Curious about your friend’s crush." />
-    <CardFeatures title="MIRROR MATCH" sub_text="adskjf" route="Upload photos and AI will magically analyze similarity score." />
+    <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="cosmic" />
+    <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="comsmic" />
+    <CardFeatures title="cosmic chemistry" sub_text="adskjf" route="comsmic" />
 </div>
 
    
