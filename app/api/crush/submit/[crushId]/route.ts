@@ -13,7 +13,7 @@ export const GET = async (request: Request, context: { params: any}) => {
 
     await connect();
 
-    const submissions = await Crush.find({ id: crushId });
+    const submissions = await Crush.find({ id: crushId }).exec();
     return NextResponse.json(submissions, { status: 200 });
   } catch (error: any) {
     console.error("Error fetching submissions:", error);
