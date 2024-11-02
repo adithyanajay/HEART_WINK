@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import LinkDisplay from "../_components/linkCopy";
+import DisplayCrush from "../_components/DisplayCrush";
 
 function Crush() {
     const [linkId, setLinkId] = useState<string>("");
@@ -43,7 +44,7 @@ function Crush() {
             console.log(data);
 
             if (data.id) {
-                const generatedLink = `${window.location.origin}/submit/${data.id}`;
+                const generatedLink = `${window.location.origin}/crush/submit/${data.id}`;
                 setLinkId(generatedLink);
                 localStorage.setItem("crushTrackerLink", data.id);
                 localStorage.setItem("link", generatedLink); 
@@ -86,8 +87,9 @@ function Crush() {
                         </button>
                     </form>
                 ) : (
-                    <div> 
+                    <div className="text-center shadow shadow-gray-700/30 w-10/12 md:w-full max-w-2xl m-auto min-h-40 bg-red_main p-10 rounded-md mt-10"> 
                         <LinkDisplay link={linkId} />
+                        <DisplayCrush />
                     </div>
                 )
             }

@@ -60,7 +60,7 @@ function Page() {
       }
 
       const data = await response.json();
-      console.log(data); // Log the full response
+      console.log(data); 
 
       setResponseData(data);
       setShowResult(true);

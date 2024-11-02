@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface LinkDisplayProps {
@@ -21,10 +22,10 @@ const LinkDisplay: React.FC<LinkDisplayProps> = ({ link }) => {
         <div className="mt-4 text-center">
             {link ? (
                 <>
-                    <p className="text-white">Your generated link:</p>
-                    <p className="text-blue-300">{link}</p>
+                    <p className="text-white text-xl md:text-3xl">Share this link to prank your friends:</p>
+                    <p className="text-blue-300 mt-5"><Link href={link}>{link}</Link></p>
                     <button
-                        className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition mt-2"
+                        className="mt-5 bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition "
                         onClick={handleCopyLink}
                     >
                         Copy Link
