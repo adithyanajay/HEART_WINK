@@ -48,6 +48,8 @@ To start the application, use:
 ```bash
 npm run dev
 ```
+###.env variables 
+MONGO_URI="mongodbconnectionstring"
 
 ### Project Documentation
 
