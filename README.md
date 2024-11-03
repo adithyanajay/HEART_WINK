@@ -49,7 +49,7 @@ To start the application, use:
 npm run dev
 ```
 ###.env variables 
-MONGO_URI="mongodbconnectionstring"
+MONGODB_URI="mongodbconnectionstring"
 
 ### Project Documentation
 
