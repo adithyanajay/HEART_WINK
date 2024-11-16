@@ -19,12 +19,12 @@ const connect = async() => {
     }
 
     try {
-        mongoose.connect(MONGODB_URI!, {
+        mongoose.connect(MONGODB_URI, {
             dbName: "Heart_wink",
             bufferCommands: true
         });
         console.log("Connected");
-    } catch(error:any) {
+    } catch(error) {
         console.error("Failed to connect", error);
         throw new Error ("Error: ", error);
     }

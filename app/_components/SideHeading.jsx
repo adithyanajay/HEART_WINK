@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface SideHeadingProps {
-  text: string;
-  postion: string;
-}
+// interface SideHeadingProps {
+//   text: string;
+//   postion: string;
+// }
 
-function SideHeading({ text, postion }: SideHeadingProps) {
+function SideHeading({ text, postion }) {
     const heading = text.split('');
 
     return (

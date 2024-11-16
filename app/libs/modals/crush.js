@@ -1,12 +1,12 @@
 import { Schema, models, model } from "mongoose";
 
-interface Submission {
-  friendName: string;
-  crushName: string;
-  submittedAt: Date;
-}
+// interface Submission {
+//   friendName: string;
+//   crushName: string;
+//   submittedAt: Date;
+// }
 
-const SubmissionSchema = new Schema<Submission>({
+const SubmissionSchema = new Schema({
   friendName: { type: String, required: true },
   crushName: { type: String, required: true },
   submittedAt: { type: Date, default: Date.now },

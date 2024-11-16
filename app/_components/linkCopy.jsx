@@ -1,11 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-interface LinkDisplayProps {
-    link: string | null;
-}
-
-const LinkDisplay: React.FC<LinkDisplayProps> = ({ link }) => {
+const LinkDisplay = ({ link }) => {
     const handleCopyLink = () => {
         if (link) {
             navigator.clipboard.writeText(link)

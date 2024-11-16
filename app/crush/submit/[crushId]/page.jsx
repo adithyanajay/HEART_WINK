@@ -1,19 +1,12 @@
 "use client";
-import { RoundHeart } from "@/app/_assets";
+import { RoundHeart } from "../../../_assets";
 import Image from "next/image";
 import { useState } from "react";
-
-interface FormData {
-  yourName: string;
-  yourDOB: string;
-  partnerName: string;
-  partnerDOB: string;
-}
 
 function Page() {
   const [showResult, setShowResult] = useState(false);
   const [username, setUsername] = useState("");
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState({
     yourName: "",
     yourDOB: "",
     partnerName: "",
@@ -23,7 +16,8 @@ function Page() {
   const backButtonClick = () => {
     setShowResult(false);
   };
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -31,7 +25,7 @@ function Page() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const crushId = localStorage.getItem("crushTrackerLink");
 
@@ -53,14 +47,12 @@ function Page() {
       });
 
       const data = await response.json();
-      setUsername(data.name)
+      setUsername(data.name);
       if (response.ok) {
         setShowResult(true);
       } else {
         alert(data.message);
       }
-
-      
     } catch (error) {
       console.error("Error submitting friend name:", error);
     }
@@ -130,15 +122,14 @@ function Page() {
         </form>
       ) : (
         <div className="mt-10 text-center shadow shadow-gray-700/30 w-10/12 md:w-full max-w-2xl m-auto min-h-40 bg-red_main p-10 rounded-md">
-             <div className="divider w-20 m-auto mb-10">
-              <Image src={RoundHeart} alt="divider" className="w-full" />
-            </div>
+          <div className="divider w-20 m-auto mb-10">
+            <Image src={RoundHeart} alt="divider" className="w-full" />
+          </div>
           <h1 className="text-xl md:text-5xl font-bold m-auto text-white mb-10">It was a prank!!!</h1>
-            <p className="text-xl md:text-3xl font-bold m-auto text-white mb-10">
-
-                {username} got to know your crush
-            </p>
-            <h2 className="text-xl md:text-4xl font-bold m-auto text-white mb-10">BEST OF LUCK!</h2>
+          <p className="text-xl md:text-3xl font-bold m-auto text-white mb-10">
+            {username} got to know your crush
+          </p>
+          <h2 className="text-xl md:text-4xl font-bold m-auto text-white mb-10">BEST OF LUCK!</h2>
           <button
             className="bg-blue-500 text-white font-semibold py-2 px-8 rounded-lg hover:bg-blue-600 transition"
             onClick={backButtonClick}

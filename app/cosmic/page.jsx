@@ -5,25 +5,25 @@ import React from "react";
 import { RoundHeart } from "../_assets";
 import Image from "next/image";
 
-interface FormData {
-  yourName: string;
-  yourDOB: string;
-  partnerName: string;
-  partnerDOB: string;
-}
+// interface FormData {
+//   yourName: string;
+//   yourDOB: string;
+//   partnerName: string;
+//   partnerDOB: string;
+// }
 
 function Page() {
   const [showResult, setShowResult] = useState(false);
 
-  const [responseData, setResponseData] = useState<any>(null);
-  const [formData, setFormData] = useState<FormData>({
+  const [responseData, setResponseData] = useState(null);
+  const [formData, setFormData] = useState({
     yourName: "",
     yourDOB: "",
     partnerName: "",
     partnerDOB: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -36,7 +36,7 @@ function Page() {
     setResponseData(null);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (
       formData.yourName === "" ||

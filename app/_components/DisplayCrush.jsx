@@ -2,13 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 
-interface Submission {
-  friendName: string;
-  crushName: string;
-}
-
 const DisplayCrush = () => {
-  const [submissions, setSubmissions] = useState<Submission[]>([]);
+  const [submissions, setSubmissions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -22,17 +17,16 @@ const DisplayCrush = () => {
         if (!response.ok) throw new Error("Failed to fetch submissions");
 
         const data = await response.json();
-        
-       
-        const extractedSubmissions = data.flatMap((entry: any) =>
-          entry.submissions.map((submission: Submission) => ({
+
+        const extractedSubmissions = data.flatMap(entry =>
+          entry.submissions.map(submission => ({
             friendName: submission.friendName,
             crushName: submission.crushName,
           }))
         );
 
         setSubmissions(extractedSubmissions);
-      } catch (err: any) {
+      } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
