@@ -3,6 +3,9 @@
 ## Basic Details
 
 ### Project Demo
+#### Hosted Project
+[Click here for Heart Wink Online ](https://heart-wink-yeuy.vercel.app/)
+
 #### Video
 [Watch the Demo](https://www.youtube.com/watch?v=SgsVHI1JUUw)  
 *This video demonstrates the key features and functionality of the Love Tracking App.*
