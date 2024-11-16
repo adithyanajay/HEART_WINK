@@ -50,8 +50,11 @@ To start the application, use:
 ```bash
 npm run dev
 ```
-###.env variables 
+#### .env variables 
 MONGODB_URI="mongodbconnectionstring"
+
+Please connect the app with mongodb atlas, create a .env file and please add your connection string in the format mentioned above.
+
 
 ### Project Documentation
 
