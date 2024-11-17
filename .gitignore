@@ -30,11 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # env files (can opt-in for commiting if needed)
-.env*
+# .env*
+# the .env file is pushed to the repo folder for easy evaluation of the project.
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# next-env.d.ts

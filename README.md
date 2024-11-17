@@ -81,6 +81,11 @@ Please connect the app with mongodb atlas, create a .env file and please add you
 
 ---
 
+
+### extra
+the .env file is pushed to the repo folder for easy evaluation of the project.
+
+
 *Made with ❤️ at TinkerHub Useless Projects* 
 
 ---
